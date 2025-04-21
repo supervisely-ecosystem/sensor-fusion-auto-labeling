@@ -1,0 +1,5 @@
+supervisely.env
+local.env
+app_data/
+**/__pycache__/
+yolo11s-seg.pt

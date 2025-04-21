@@ -1,1 +1,1 @@
-# sensor-fusion-auto-labeling
+# Sensor fusion auto labeling

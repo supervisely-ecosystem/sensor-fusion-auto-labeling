@@ -1,0 +1,20 @@
+{
+    "name": "Sensor fusion point cloud auto labeling",
+    "type": "app",
+    "categories": [
+        "pointclouds",
+        "data operations"
+    ],
+    "description": "Create segmentation masks for 3D point cloud using segmentation masks on 2D photo context image and camera calibration data",
+    "docker_image": "supervisely/sensor_fusion:1.0.0",
+    "min_instance_version": "6.12.33",
+    "main_script": "src/main.py",
+    "task_location": "workspace_tasks",
+    "headless": true,
+    "context_menu": {
+        "target": [
+            "point_cloud_project",
+            "point_cloud_episodes_project"
+        ]
+    }
+}
