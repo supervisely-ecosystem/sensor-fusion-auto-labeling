@@ -8,7 +8,7 @@
     "description": "Create segmentation masks for 3D point cloud using segmentation masks on 2D photo context image and camera calibration data",
     "docker_image": "supervisely/sensor_fusion:1.0.0",
     "min_instance_version": "6.12.33",
-    "entrypoint": "python3 -m src/main.py",
+    "entrypoint": "python3 -m src/main",
     "task_location": "workspace_tasks",
     "headless": true,
     "context_menu": {
