@@ -64,6 +64,8 @@ def main():
                     f"No objects found. Point cloud ID: {pcd_id}, photo context index: {i}"
                 )
         progress_bar.iter_done_report()
+    # clean app data directory
+    sly.fs.clean_dir("app_data")
 
 
 if __name__ == "__main__":

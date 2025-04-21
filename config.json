@@ -11,6 +11,7 @@
     "entrypoint": "python3 -m src.main",
     "task_location": "workspace_tasks",
     "headless": true,
+    "gpu": "preferred",
     "context_menu": {
         "target": [
             "point_cloud_project",
