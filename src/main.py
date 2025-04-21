@@ -34,6 +34,11 @@ def main():
         pcd, pcd_points = f.load_pcd_data(pcd_id)
         # get photo context images and their metadata
         photo_context_infos = f.load_photo_context_data(pcd_id)
+        if len(photo_context_infos) == 0:
+            sly.logger.warn(
+                f"Point cloud with ID {pcd_id} has no photo context images and will be skipped."
+            )
+            continue
         for i, photo_context_info in enumerate(photo_context_infos):
             photo_context_img = photo_context_info["image"]
             extrinsic_matrix = photo_context_info["extrinsic_matrix"]
